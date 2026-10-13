@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio personal — Node.js + Express + Tailwind CSS + JS vanilla",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/css/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./public/css/output.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "express",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}

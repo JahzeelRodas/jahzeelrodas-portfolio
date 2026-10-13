@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahzeel Rodas — Ingeniero Informático</title>
+  <meta name="description" content="Portfolio de Jahzeel Issac Rodas Flores, Ingeniero Informático / Software Developer en La Paz, Bolivia. Backend Node.js y Java Spring Boot, portales institucionales, automatización y robótica educativa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/output.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101400'/%3E%3Ctext x='32' y='44' font-family='Arial, sans-serif' font-size='32' font-weight='900' fill='%23d4f321' text-anchor='middle'%3EJR%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#101400" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jahzeel Rodas — Ingeniero Informático" />
+  <meta property="og:description" content="Backend Node.js y Java Spring Boot, portales institucionales, automatización y robótica educativa. La Paz, Bolivia." />
+  <meta property="og:locale" content="es_BO" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Jahzeel Rodas — Ingeniero Informático" />
+  <meta name="twitter:description" content="Backend Node.js y Java Spring Boot, portales institucionales, automatización y robótica educativa." />
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
+</head>
+<body class="font-display bg-[#101400] text-[#f2f3e9] antialiased">
+
+
+  <div id="loader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-4 bg-[#101400]">
+    <p class="text-5xl font-black tracking-tight">JR<span class="text-[#d4f321]">.</span></p>
+    <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#f2f3e9]/60" data-i18n="loader">Cargando portfolio</p>
+  </div>
+
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#101400]/85 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
+      <a href="#inicio" class="text-lg font-black tracking-tight">JAHZEEL RODAS<span class="text-[#d4f321]">.</span></a>
+      <p class="hidden text-[11px] font-medium uppercase tracking-[0.3em] text-[#f2f3e9]/60 lg:block" data-i18n="nav.tagline">Portfolio — La Paz, Bolivia</p>
+      <div class="flex items-center gap-3">
+        <a href="mailto:jahzeelrodas@gmail.com" class="hidden rounded-full bg-[#d4f321] px-5 py-2 text-xs font-bold uppercase tracking-widest text-[#101400] transition hover:bg-[#f2f3e9] sm:block" data-i18n="nav.contact">Contacto</a>
+        <button id="lang-btn" data-lang-toggle class="rounded-full border border-white/25 px-4 py-2 text-xs font-bold uppercase tracking-widest transition hover:border-[#d4f321] hover:text-[#d4f321]" aria-label="Switch to English" aria-pressed="false">EN</button>
+        <button id="menu-btn" data-i18n="menu.open" class="rounded-full border border-white/25 px-5 py-2 text-xs font-bold uppercase tracking-widest transition hover:border-[#d4f321] hover:text-[#d4f321]" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-overlay">Menú</button>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="menu-overlay" class="fixed inset-0 z-[90] hidden flex-col justify-between gap-8 overflow-y-auto bg-[#101400] px-6 pb-8 pt-24 md:px-12 md:pb-10" aria-hidden="true">
+    <nav class="flex flex-col gap-1">
+      <a href="#inicio" class="menu-link border-b border-white/10 py-2 text-4xl font-black uppercase tracking-tight transition hover:text-[#d4f321] sm:py-3 sm:text-5xl md:text-7xl" data-i18n="menu.home">Inicio</a>
+      <a href="#experiencia" class="menu-link border-b border-white/10 py-2 text-4xl font-black uppercase tracking-tight transition hover:text-[#d4f321] sm:py-3 sm:text-5xl md:text-7xl" data-i18n="menu.experience">Experiencia</a>
+      <a href="#habilidades" class="menu-link border-b border-white/10 py-2 text-4xl font-black uppercase tracking-tight transition hover:text-[#d4f321] sm:py-3 sm:text-5xl md:text-7xl" data-i18n="menu.stack">Stack</a>
+      <a href="#contacto" class="menu-link border-b border-white/10 py-2 text-4xl font-black uppercase tracking-tight transition hover:text-[#d4f321] sm:py-3 sm:text-5xl md:text-7xl" data-i18n="menu.contact">Contacto</a>
+    </nav>
+    <div class="flex flex-wrap gap-x-8 gap-y-2 text-sm text-[#f2f3e9]/70">
+      <a href="mailto:jahzeelrodas@gmail.com" class="transition hover:text-[#d4f321]">jahzeelrodas@gmail.com</a>
+      <a href="https://wa.me/59170226107?text=Hola%20Jahzeel%2C%20vi%20tu%20portfolio%20y%20quiero%20conversar." target="_blank" rel="noopener" class="transition hover:text-[#d4f321]" data-wa>+591 70226107</a>
+    </div>
+  </div>
+
+  <main>
+
+    <section id="inicio" class="relative flex min-h-screen flex-col justify-end overflow-hidden px-4 pb-10 pt-28 md:px-8">
+      <div class="relative mx-auto w-full max-w-7xl">
+        <div class="flex items-center justify-between text-[11px] font-medium uppercase tracking-[0.3em] text-[#f2f3e9]/60">
+          <p data-i18n="hero.role"><span class="text-[#d4f321]">●</span> Ingeniero Informático</p>
+          <p class="hidden sm:block" data-i18n="hero.since">Software Developer — desde 2016</p>
+          <p>Bolivia</p>
+        </div>
+        <h1 class="mt-6 uppercase leading-[0.85] tracking-tight">
+          <span id="hero-line-1" class="block text-[17vw] font-black md:text-[11rem]">Jahzeel</span>
+          <span id="hero-line-2" class="text-outline block text-[17vw] font-black md:text-[11rem]">Rodas®</span>
+        </h1>
+        <div class="mt-8 flex flex-col gap-6 border-t border-white/10 pt-6 md:flex-row md:items-end md:justify-between">
+          <p class="max-w-xl text-base leading-relaxed text-[#f2f3e9]/80 md:text-lg" data-i18n="hero.desc">Desarrollo sistemas backend con <strong class="text-[#f2f3e9]">Node.js y Java Spring Boot</strong>, arquitectura web y automatización. Hardware libre con Arduino y NodeBots.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#experiencia" class="rounded-full bg-[#d4f321] px-6 py-3 text-xs font-bold uppercase tracking-widest text-[#101400] transition hover:bg-[#f2f3e9]" data-i18n="hero.cta1">Ver experiencia</a>
+            <a href="https://wa.me/59170226107?text=Hola%20Jahzeel%2C%20vi%20tu%20portfolio%20y%20quiero%20conversar." target="_blank" rel="noopener" class="rounded-full border border-white/25 px-6 py-3 text-xs font-bold uppercase tracking-widest transition hover:border-[#d4f321] hover:text-[#d4f321]" data-wa data-i18n="hero.cta2">WhatsApp 70226107</a>
+            <a href="/contacto.vcf" download="Jahzeel-Rodas.vcf" class="rounded-full border border-white/25 px-6 py-3 text-xs font-bold uppercase tracking-widest transition hover:border-[#d4f321] hover:text-[#d4f321]" data-i18n="hero.cta3">Guardar contacto</a>
+          </div>
+        </div>
+        <p class="mt-8 text-[11px] font-medium uppercase tracking-[0.3em] text-[#f2f3e9]/40" data-i18n="hero.scroll">Scroll ↓</p>
+      </div>
+    </section>
+
+
+    <div class="overflow-hidden border-y border-white/10 bg-[#d4f321] py-3 text-[#101400]">
+      <div class="marquee-track gap-0 text-sm font-black uppercase tracking-widest">
+        <div class="flex shrink-0 items-center">
+          <span class="px-6">Node.js ✦ Spring Boot ✦ Express ✦ NestJS ✦ Angular ✦ Flutter ✦ PostgreSQL ✦ Docker ✦ Arduino ✦ NodeBots ✦&nbsp;</span>
+        </div>
+        <div class="flex shrink-0 items-center" aria-hidden="true">
+          <span class="px-6">Node.js ✦ Spring Boot ✦ Express ✦ NestJS ✦ Angular ✦ Flutter ✦ PostgreSQL ✦ Docker ✦ Arduino ✦ NodeBots ✦&nbsp;</span>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="px-4 py-20 md:px-8 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <p data-reveal class="text-[11px] font-medium uppercase tracking-[0.3em] text-[#d4f321]" data-i18n="man.kicker">Manifiesto</p>
+        <p data-reveal class="mt-6 max-w-5xl text-3xl font-extrabold uppercase leading-[1.05] tracking-tight md:text-6xl" data-i18n="man.text">Construyo <span class="impact-accent normal-case text-[#d4f321]">sistemas</span> que sostienen instituciones, automatizo lo repetitivo y enseño <span class="impact-accent normal-case text-[#d4f321]">robótica</span> a la próxima generación.</p>
+        <div class="mt-12 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
+          <div data-reveal>
+            <p class="text-5xl font-black text-[#d4f321]">+7</p>
+            <p class="mt-2 text-xs font-medium uppercase tracking-[0.25em] text-[#f2f3e9]/60" data-i18n="stat.1">Años desarrollando sistemas</p>
+          </div>
+          <div data-reveal>
+            <p class="text-5xl font-black text-[#d4f321]">+10</p>
+            <p class="mt-2 text-xs font-medium uppercase tracking-[0.25em] text-[#f2f3e9]/60" data-i18n="stat.2">Experiencias destacadas</p>
+          </div>
+          <div data-reveal>
+            <p class="text-5xl font-black text-[#d4f321]">20+</p>
+            <p class="mt-2 text-xs font-medium uppercase tracking-[0.25em] text-[#f2f3e9]/60" data-i18n="stat.3">Tecnologías en stack</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="experiencia" class="px-4 py-20 md:px-8 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex items-end justify-between">
+          <h2 data-reveal class="uppercase leading-[0.9] tracking-tight"><span class="block text-sm font-bold tracking-[0.3em] text-[#d4f321]" data-i18n="exp.kicker">01 — Trayectoria</span><span class="mt-2 block text-5xl font-black md:text-8xl" data-i18n="exp.title">Experi&shy;encia</span></h2>
+          <p data-reveal class="hidden max-w-xs text-sm text-[#f2f3e9]/60 md:block" data-i18n="exp.sub">Sistemas institucionales, portales web e innovación con robótica educativa.</p>
+        </div>
+        <div id="project-cards" class="mt-12 border-b border-white/10">
+          <article class="project-card group grid gap-3 border-t border-white/10 py-8 transition-colors duration-300 hover:bg-[#d4f321] hover:text-[#101400] md:grid-cols-[4rem_1fr_auto] md:items-center md:gap-8 md:px-6">
+            <p class="text-sm font-bold tracking-widest text-[#d4f321] group-hover:text-[#101400]">/01</p>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-[0.25em] opacity-60" data-i18n="exp1.date">2025 — 2026 · Santa Cruz</p>
+              <h3 class="mt-1 text-2xl font-black uppercase tracking-tight md:text-4xl">CAAm — UINL</h3>
+              <p class="mt-2 max-w-2xl text-sm leading-relaxed opacity-70" data-i18n="exp1.desc">Portal web institucional del congreso. Sistema de registros con check-in por escaneo QR, generación de credenciales y emisión automática de certificados.</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[11px] font-bold uppercase tracking-widest"><span class="border border-current px-2.5 py-1 opacity-70" data-i18n="tag.web">Portal web</span><span class="border border-current px-2.5 py-1 opacity-70">QR Check-in</span><span class="border border-current px-2.5 py-1 opacity-70" data-i18n="tag.certs">Certificados</span></div>
+            </div>
+            <p class="hidden text-4xl font-black transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 md:block">↗</p>
+          </article>
+          <article class="project-card group grid gap-3 border-t border-white/10 py-8 transition-colors duration-300 hover:bg-[#d4f321] hover:text-[#101400] md:grid-cols-[4rem_1fr_auto] md:items-center md:gap-8 md:px-6">
+            <p class="text-sm font-bold tracking-widest text-[#d4f321] group-hover:text-[#101400]">/02</p>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-[0.25em] opacity-60" data-i18n="exp2.date">Institucional</p>
+              <h3 class="mt-1 text-2xl font-black uppercase tracking-tight md:text-4xl">ANNB Notarios</h3>
+              <p class="mt-2 max-w-2xl text-sm leading-relaxed opacity-70" data-i18n="exp2.desc">Desarrollo del portal web institucional de la Asociación Nacional de Notarios de Bolivia y sus soluciones digitales.</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[11px] font-bold uppercase tracking-widest"><span class="border border-current px-2.5 py-1 opacity-70" data-i18n="tag.web">Portal web</span><span class="border border-current px-2.5 py-1 opacity-70" data-i18n="tag.digital">Soluciones digitales</span></div>
+            </div>
+            <p class="hidden text-4xl font-black transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 md:block">↗</p>
+          </article>
+          <article class="project-card group grid gap-3 border-t border-white/10 py-8 transition-colors duration-300 hover:bg-[#d4f321] hover:text-[#101400] md:grid-cols-[4rem_1fr_auto] md:items-center md:gap-8 md:px-6">
+            <p class="text-sm font-bold tracking-widest text-[#d4f321] group-hover:text-[#101400]">/03</p>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-[0.25em] opacity-60" data-i18n="exp3.date">2022 — 2025</p>
+              <h3 class="mt-1 text-2xl font-black uppercase tracking-tight md:text-4xl">Aduana Nacional</h3>
+              <p class="mt-2 max-w-2xl text-sm leading-relaxed opacity-70" data-i18n="exp3.desc">Profesional en Investigación y Desarrollo de Sistemas: análisis, desarrollo y mantenimiento de sistemas clave — portales web, TCF, RSI, VUCE.</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[11px] font-bold uppercase tracking-widest"><span class="border border-current px-2.5 py-1 opacity-70">Spring Boot</span><span class="border border-current px-2.5 py-1 opacity-70">Node.js</span><span class="border border-current px-2.5 py-1 opacity-70">TCF · RSI · VUCE</span></div>
+            </div>
+            <p class="hidden text-4xl font-black transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 md:block">↗</p>
+          </article>
+          <article class="project-card group grid gap-3 border-t border-white/10 py-8 transition-colors duration-300 hover:bg-[#d4f321] hover:text-[#101400] md:grid-cols-[4rem_1fr_auto] md:items-center md:gap-8 md:px-6">
+            <p class="text-sm font-bold tracking-widest text-[#d4f321] group-hover:text-[#101400]">/04</p>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-[0.25em] opacity-60" data-i18n="exp4.date">Innovación & Robótica</p>
+              <h3 class="mt-1 text-2xl font-black uppercase tracking-tight md:text-4xl">Rovelbots</h3>
+              <p class="mt-2 max-w-2xl text-sm leading-relaxed opacity-70" data-i18n="exp4.desc">Conferencias y cursos en metodología STEM. Seguidores de línea con Arduino y NodeBots: JavaScript para robótica.</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[11px] font-bold uppercase tracking-widest"><span class="border border-current px-2.5 py-1 opacity-70">Arduino</span><span class="border border-current px-2.5 py-1 opacity-70">NodeBots</span><span class="border border-current px-2.5 py-1 opacity-70">STEM</span><a href="https://www.rovelbots.com" target="_blank" rel="noopener" class="border border-current px-2.5 py-1 transition group-hover:bg-[#101400] group-hover:text-[#d4f321]">rovelbots.com ↗</a></div>
+            </div>
+            <p class="hidden text-4xl font-black transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 md:block">↗</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="habilidades" class="px-4 py-20 md:px-8 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <h2 data-reveal class="uppercase leading-[0.9] tracking-tight"><span class="block text-sm font-bold tracking-[0.3em] text-[#d4f321]" data-i18n="stack.kicker">02 — Stack</span><span class="mt-2 block text-5xl font-black md:text-8xl" data-i18n="stack.title">Habili&shy;dades</span></h2>
+        <div id="skills-grid" class="mt-12 grid gap-4 sm:grid-cols-2">
+          <div class="skill-group border border-white/10 bg-white/[0.03] p-6 transition-colors duration-300 hover:border-[#d4f321] md:p-8">
+            <p class="text-sm font-black tracking-widest text-[#d4f321]">/01</p>
+            <h3 class="mt-2 text-xl font-black uppercase tracking-tight" data-i18n="stack.backend">Backend</h3>
+            <div class="mt-4 flex flex-wrap gap-2 text-sm font-medium"><span class="bg-white/10 px-3 py-1.5">Node.js</span><span class="bg-white/10 px-3 py-1.5">Express</span><span class="bg-white/10 px-3 py-1.5">Java</span><span class="bg-white/10 px-3 py-1.5">Spring Boot</span><span class="bg-white/10 px-3 py-1.5">Python</span><span class="bg-white/10 px-3 py-1.5">NestJS</span></div>
+          </div>
+          <div class="skill-group border border-white/10 bg-white/[0.03] p-6 transition-colors duration-300 hover:border-[#d4f321] md:p-8">
+            <p class="text-sm font-black tracking-widest text-[#d4f321]">/02</p>
+            <h3 class="mt-2 text-xl font-black uppercase tracking-tight" data-i18n="stack.frontend">Frontend / Apps</h3>
+            <div class="mt-4 flex flex-wrap gap-2 text-sm font-medium"><span class="bg-white/10 px-3 py-1.5">HTML5</span><span class="bg-white/10 px-3 py-1.5">Tailwind CSS</span><span class="bg-white/10 px-3 py-1.5">JavaScript</span><span class="bg-white/10 px-3 py-1.5">Angular</span><span class="bg-white/10 px-3 py-1.5">Flutter</span></div>
+          </div>
+          <div class="skill-group border border-white/10 bg-white/[0.03] p-6 transition-colors duration-300 hover:border-[#d4f321] md:p-8">
+            <p class="text-sm font-black tracking-widest text-[#d4f321]">/03</p>
+            <h3 class="mt-2 text-xl font-black uppercase tracking-tight" data-i18n="stack.data">Datos & DevOps</h3>
+            <div class="mt-4 flex flex-wrap gap-2 text-sm font-medium"><span class="bg-white/10 px-3 py-1.5">PostgreSQL</span><span class="bg-white/10 px-3 py-1.5">MySQL</span><span class="bg-white/10 px-3 py-1.5">SQL</span><span class="bg-white/10 px-3 py-1.5">Git</span><span class="bg-white/10 px-3 py-1.5">GitHub</span><span class="bg-white/10 px-3 py-1.5">Docker</span><span class="bg-white/10 px-3 py-1.5">Postman</span></div>
+          </div>
+          <div class="skill-group border border-white/10 bg-white/[0.03] p-6 transition-colors duration-300 hover:border-[#d4f321] md:p-8">
+            <p class="text-sm font-black tracking-widest text-[#d4f321]">/04</p>
+            <h3 class="mt-2 text-xl font-black uppercase tracking-tight" data-i18n="stack.qa">Testing & Ágil</h3>
+            <div class="mt-4 flex flex-wrap gap-2 text-sm font-medium"><span class="bg-white/10 px-3 py-1.5">JUnit</span><span class="bg-white/10 px-3 py-1.5">Playwright</span><span class="bg-white/10 px-3 py-1.5">ISTQB</span><span class="bg-white/10 px-3 py-1.5">Scrum</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="overflow-hidden border-y border-white/10 py-3">
+      <div class="marquee-track marquee-track-fast gap-0 text-sm font-black uppercase tracking-widest text-[#f2f3e9]/50">
+        <div class="flex shrink-0 items-center">
+          <span class="px-6" data-i18n="marquee2">Rovelbots ✦ Arduino ✦ Seguidores de línea ✦ Metodología STEM ✦ Conferencias ✦ Talleres ✦&nbsp;</span>
+        </div>
+        <div class="flex shrink-0 items-center" aria-hidden="true">
+          <span class="px-6" data-i18n="marquee2">Rovelbots ✦ Arduino ✦ Seguidores de línea ✦ Metodología STEM ✦ Conferencias ✦ Talleres ✦&nbsp;</span>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="contacto" class="px-4 py-20 md:px-8 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <p data-reveal class="text-[11px] font-medium uppercase tracking-[0.3em] text-[#d4f321]" data-i18n="contact.kicker">03 — Contacto · La Paz, Bolivia</p>
+        <h2 data-reveal data-i18n="contact.title" class="mt-4 uppercase leading-[0.9] tracking-tight"><span class="block text-5xl font-black md:text-8xl">¿Habla&shy;mos?</span><span class="text-outline-lime block text-5xl font-black md:text-8xl">Escríbeme.</span></h2>
+        <div data-reveal class="mt-10 flex flex-wrap gap-3">
+          <a href="mailto:jahzeelrodas@gmail.com" class="rounded-full bg-[#d4f321] px-8 py-4 text-xs font-bold uppercase tracking-widest text-[#101400] transition hover:bg-[#f2f3e9]">jahzeelrodas@gmail.com</a>
+          <a data-wa href="https://wa.me/59170226107?text=Hola%20Jahzeel%2C%20vi%20tu%20portfolio%20y%20quiero%20conversar." target="_blank" rel="noopener" data-i18n="contact.wa" class="rounded-full border border-white/25 px-8 py-4 text-xs font-bold uppercase tracking-widest transition hover:border-[#d4f321] hover:text-[#d4f321]">WhatsApp +591 70226107</a>
+          <a href="/contacto.vcf" download="Jahzeel-Rodas.vcf" data-i18n="contact.save" class="rounded-full border border-white/25 px-8 py-4 text-xs font-bold uppercase tracking-widest transition hover:border-[#d4f321] hover:text-[#d4f321]">Guardar contacto</a>
+          <a data-cv href="/cv-jahzeel-rodas-ES.pdf" download="CV-Jahzeel-Rodas-ES.pdf" data-i18n="contact.cv" class="rounded-full bg-[#d4f321] px-8 py-4 text-xs font-bold uppercase tracking-widest text-[#101400] transition hover:bg-[#f2f3e9]">Descargar CV ↓</a>
+          <a href="https://www.rovelbots.com" target="_blank" rel="noopener" data-i18n="contact.rovelbots" class="rounded-full border border-[#d4f321]/60 px-8 py-4 text-xs font-bold uppercase tracking-widest text-[#d4f321] transition hover:bg-[#d4f321] hover:text-[#101400]">Visitar Rovelbots ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="overflow-hidden border-t border-white/10 px-4 pb-6 pt-12 md:px-8">
+    <div class="mx-auto max-w-7xl">
+      <p class="text-outline px-2 text-center text-[12vw] font-black uppercase leading-[0.9] tracking-tight md:text-[9vw]" data-i18n="footer.big">Siempre<br class="sm:hidden" /> creando®</p>
+      <div class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-[#f2f3e9]/50 md:flex-row">
+        <p>© <span id="year"></span> Jahzeel Issac Rodas Flores</p>
+        <p class="uppercase tracking-[0.25em]" data-i18n="footer.loc">La Paz — Bolivia</p>
+        <a href="#inicio" data-i18n="footer.back" class="uppercase tracking-[0.25em] transition hover:text-[#d4f321]">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

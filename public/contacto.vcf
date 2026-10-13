@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Jahzeel Issac Rodas Flores
+N:Rodas Flores;Jahzeel Issac;;;
+ORG:Rovelbots
+TITLE:Ingeniero Informático — Software Developer
+TEL;TYPE=CELL,VOICE:+59170226107
+EMAIL:jahzeelrodas@gmail.com
+URL:https://www.rovelbots.com
+ADR;TYPE=WORK:;;La Paz;La Paz;;Bolivia
+NOTE:Backend Node.js y Java Spring Boot — Portales institucionales\, automatización y robótica educativa.
+END:VCARD
